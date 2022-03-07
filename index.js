@@ -1,23 +1,30 @@
-console.log('anything')
+// https://github.com/chrisccerami/mars-photo-api
 
-fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=2015-11-3')
+let dateInput =document.querySelector('#date').value
+const imgContainer = document.getElementsByClassName('imgContainer')
+
+let date ="2015-11-03"
+const calendarFormLocation = document.querySelector('#calendarDate')
+
+fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=${dateInput}`)
 .then((data) => data.json())
 .then((rovers) => getPicOfRover(rovers))
 
+
+//do we need this
 function getPicOfRover(rovers) {
-    console.log('Test ', rovers)
-    console.log("photos ", rovers.photos)
-    console.log("1st img_src ", rovers.photos[0].img_src)
-    //console.log("date ", rovers[earth_date]);
-
-    //const imgLocation = document.querySelector('')
     const imgLocation = document.querySelector('.img')
-    console.log("first img element", imgLocation)
-    const imgContainer = document.getElementsByClassName('imgContainer')
-    console.log("image container div", imgContainer)
     imgLocation.src = rovers.photos[0].img_src
-    //imgContainer.append(imgLocation)
-    console.log(imgLocation)
-    /////////////
+}
+calendarFormLocation.addEventListener('input', callBackForm)
 
+function callBackForm(event) {
+    event.preventDefault();
+    //get the values
+    dateInput =document.querySelector('#date').value
+    console.log(event.target.value)
+    return dateInput
+    //date = dateInput
+    //format
+    //submit user input into date value
 }
