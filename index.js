@@ -1,5 +1,5 @@
 // https://github.com/chrisccerami/mars-photo-api
-
+// an edit to check my branch
 let dateInput =document.querySelector('#date').value
 const imgContainer = document.getElementsByClassName('imgContainer')
 
