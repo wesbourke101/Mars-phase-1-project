@@ -9,28 +9,101 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <h1>Did i do this?</h1>
-    <!-- img test -->
-    <div class="form">
-        <form id="calendarDate" class="dateForm">
-            <input
-                type="date"
-                class="dateInput"
-                id="date"
-            />
-            <!-- drop-down for rover selection -->
-            <select id="roverSelection">
-                <option value="curiosity">Curiosity</option>
-                <option value="perseverance">Perseverance</option>
-                <option value="opportunity">Opportunity</option>
-                <option value="spirit">Spirit</option>
-            </select>
-        </form>       
-    </div>
-    <div class="imgContainer">
-        <div class="roverCard">
-            <img id="fistImg" class="img" src="https://media.istockphoto.com/photos/mars-the-red-planet-picture-id1064282352?b=1&k=20&m=1064282352&s=170667a&w=0&h=9s-hWHJlNdHRk8__KDjmCVKB3N40blSbp00gXUsYvO4="/>
+    <h1>What are the Rovers up to?</h1>
+        <div class="curiosityCard">
+            <h2 class =roverClass id="curiosityID">Curiosity</h2>
+            <div class = "form">
+                <form id="calendarDate" class="dateForm">
+                    <input
+                        type="date"
+                        class="dateInput"
+                        id="curiosityDate"
+                    />
+                <select id="curiosityCameraSelection" class="cameraSelection">
+                    <!-- <option value="">Select 1</option> -->
+                    <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                    <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                    <option value="NAVCAM">Navigation Camera</option>
+                </select>
+            </form>
+            </div>
+            <img src="default" id="curiosityImg" alt="alt text"/> <!-- needs to be changed -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloremque maiores sapiente eveniet nam veniam possimus, sint, sit omnis incidunt blanditiis necessitatibus velit vitae, sunt cumque non error aspernatur similique.
+            </p>
+
         </div>
+
+
+        <!-- <div class="spiritCard">
+            <h2>spirit</h2>
+            <div class = "form">
+                <form id="calendarDate" class="dateForm">
+                <input
+                    type="date"
+                    class="dateInput"
+                    id="date"
+                />
+            </div>
+            <img src="default" id="spiritImg" alt="alt text"/> 
+            <select id="spiritCameraSelection" class="cameraSelection">
+                <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                <option value="NAVCAM">Navigation Camera</option>
+                <option value="PANCAM">Panoramic Camera</option>
+            </select>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem libero praesentium perferendis placeat sint eaque architecto nesciunt cumque quae! Dolorem laudantium optio, quam porro dolor fugit distinctio harum quos!
+            </p>
+
+        </div>
+
+
+        <div class="opportunityCard">
+            <h2>opportunity</h2>
+            <div class = "form">
+                <form id="calendarDate" class="dateForm">
+                <input
+                    type="date"
+                    class="dateInput"
+                    id="date"
+                />
+            </div>
+            <img src="default" id="opportunityImg" alt="alt text"/> 
+            <select id="opportunityCameraSelection" class="cameraSelection">
+                <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                <option value="NAVCAM">Navigation Camera</option>
+                <option value="PANCAM">Panoramic Camera</option>
+            </select>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt debitis quibusdam atque ex similique mollitia laborum deleniti. Sed dignissimos a nobis expedita autem consequatur totam alias debitis excepturi dicta.
+            </p>
+        </div>
+
+
+
+        <div class="perseveranceCard">
+            <h2>perseverance</h2>
+            <div class = "form">
+                <form id="calendarDate" class="dateForm">
+                <input
+                    type="date"
+                    class="dateInput"
+                    id="date"
+                />
+            </div>
+            <img src="default" id="perseveranceImg" alt="alt text"/> 
+            <select id="perseveranceCameraSelection" class="cameraSelection">
+                <option value="NAVCAM_LEFT">Navigation Camera - Left</option>
+                <option value="NAVCAM_RIGHT">Navigation Camera - Right</option>
+                <option value="MCZ_LEFT">Mast Camera Zoom - Left</option>
+                <option value="MCZ_RIGHT">Mast Camera Zoom - Right</option>
+            </select>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut at tempore, consequuntur dicta voluptatem inventore vel adipisci. Aspernatur repellat neque necessitatibus minus quidem consequuntur nesciunt iste aut vero ut?
+            </p>
+        </div> -->
     </div>
     
 </body>
