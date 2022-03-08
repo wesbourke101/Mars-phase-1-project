@@ -16,7 +16,7 @@ function findDate () {
             imageLocation.src = dataPic.photos[0].img_src
         })
     })
-    roverSelectionLocation.addEventListener('submit', (e) => {
+    roverSelectionLocation.addEventListener('input', (e) => {
         console.log('you made it here')
     })  
 }
