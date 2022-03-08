@@ -24,6 +24,9 @@ function findDate () {
             console.log('camera selectionValue after click:', cameraSelection.value)
         })
     })
+    roverSelectionLocation.addEventListener('input', (e) => {
+        console.log('you made it here')
+    })  
 }
 
 findDate()
