@@ -11,9 +11,9 @@
 <body>
     <h1>What are the Rovers up to?</h1>
         <div class="curiosityCard">
-            <h2 class =roverClass id="curiosityID">Curiosity</h2>
+            <h2 class ="roverClass" id="curiosityID">Curiosity</h2>
             <div class = "form">
-                <form id="calendarDate" class="dateForm">
+                <form id="curiosityCalendarDate" class="dateForm">
                     <input
                         type="date"
                         class="dateInput"
@@ -27,7 +27,7 @@
                 </select>
             </form>
             </div>
-            <img src="default" id="curiosityImg" alt="alt text"/> <!-- needs to be changed -->
+            <img class="img" src="default" id="curiosityImg" alt="alt text"/> <!-- needs to be changed -->
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed doloremque maiores sapiente eveniet nam veniam possimus, sint, sit omnis incidunt blanditiis necessitatibus velit vitae, sunt cumque non error aspernatur similique.
             </p>
@@ -35,47 +35,47 @@
         </div>
 
 
-        <!-- <div class="spiritCard">
-            <h2>spirit</h2>
+        <div class="spiritCard">
+            <h2 class="roverClass" id="spiritID">spirit</h2>
             <div class = "form">
-                <form id="calendarDate" class="dateForm">
+                <form id="spiritCalendarDate" class="dateForm">
                 <input
                     type="date"
                     class="dateInput"
-                    id="date"
+                    id="spiritDate"
                 />
+                <select id="spiritCameraSelection" class="cameraSelection">
+                    <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                    <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                    <option value="NAVCAM">Navigation Camera</option>
+                    <option value="PANCAM">Panoramic Camera</option>
+                </select>
             </div>
             <img src="default" id="spiritImg" alt="alt text"/> 
-            <select id="spiritCameraSelection" class="cameraSelection">
-                <option value="FHAZ">Front Hazard Avoidance Camera</option>
-                <option value="RHAZ">Rear Hazard Avoidance Camera</option>
-                <option value="NAVCAM">Navigation Camera</option>
-                <option value="PANCAM">Panoramic Camera</option>
-            </select>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem libero praesentium perferendis placeat sint eaque architecto nesciunt cumque quae! Dolorem laudantium optio, quam porro dolor fugit distinctio harum quos!
+                2004 - 2010
             </p>
 
         </div>
 
 
-        <div class="opportunityCard">
-            <h2>opportunity</h2>
+        <!-- <div class="opportunityCard">
+            <h2 class="roverClass" id="opportunityID">opportunity</h2>
             <div class = "form">
-                <form id="calendarDate" class="dateForm">
+                <form id="opportunityCalendarDate" class="dateForm">
                 <input
                     type="date"
                     class="dateInput"
-                    id="date"
+                    id="opportunityDate"
                 />
+                <select id="opportunityCameraSelection" class="cameraSelection">
+                    <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                    <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                    <option value="NAVCAM">Navigation Camera</option>
+                    <option value="PANCAM">Panoramic Camera</option>
+                </select>
             </div>
             <img src="default" id="opportunityImg" alt="alt text"/> 
-            <select id="opportunityCameraSelection" class="cameraSelection">
-                <option value="FHAZ">Front Hazard Avoidance Camera</option>
-                <option value="RHAZ">Rear Hazard Avoidance Camera</option>
-                <option value="NAVCAM">Navigation Camera</option>
-                <option value="PANCAM">Panoramic Camera</option>
-            </select>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt debitis quibusdam atque ex similique mollitia laborum deleniti. Sed dignissimos a nobis expedita autem consequatur totam alias debitis excepturi dicta.
             </p>
@@ -84,22 +84,22 @@
 
 
         <div class="perseveranceCard">
-            <h2>perseverance</h2>
+            <h2 class="roverClass" id="perseveranceID">perseverance</h2>
             <div class = "form">
-                <form id="calendarDate" class="dateForm">
+                <form id="perseveranceCalendarDate" class="dateForm">
                 <input
                     type="date"
                     class="dateInput"
-                    id="date"
+                    id="perseveranceDate"
                 />
+                <select id="perseveranceCameraSelection" class="cameraSelection">
+                    <option value="NAVCAM_LEFT">Navigation Camera - Left</option>
+                    <option value="NAVCAM_RIGHT">Navigation Camera - Right</option>
+                    <option value="MCZ_LEFT">Mast Camera Zoom - Left</option>
+                    <option value="MCZ_RIGHT">Mast Camera Zoom - Right</option>
+                </select>
             </div>
             <img src="default" id="perseveranceImg" alt="alt text"/> 
-            <select id="perseveranceCameraSelection" class="cameraSelection">
-                <option value="NAVCAM_LEFT">Navigation Camera - Left</option>
-                <option value="NAVCAM_RIGHT">Navigation Camera - Right</option>
-                <option value="MCZ_LEFT">Mast Camera Zoom - Left</option>
-                <option value="MCZ_RIGHT">Mast Camera Zoom - Right</option>
-            </select>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut at tempore, consequuntur dicta voluptatem inventore vel adipisci. Aspernatur repellat neque necessitatibus minus quidem consequuntur nesciunt iste aut vero ut?
             </p>
