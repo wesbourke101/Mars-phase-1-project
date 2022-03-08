@@ -1,30 +1,94 @@
+@import url('http://fonts.cdnfonts.com/css/nasa');
+/* nasa font */
+
 body {
-    background: gray;
-    
+    background: url(https://wallpaperaccess.com/full/465921.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+h1{
+    font-family: 'Nasa', sans-serif;
+    font-size: 50px;
+    color:#fc3d21;
+    text-align: center;
+    background-color: #0b3d91;
+}
+.form {
+    padding: 10px;
+}
+
+.dateInput {
+    font-family: 'Nasa', sans-serif;
+    font-size: x-large;
+ }
+
+.cameraSelection {
+    font-family: 'Nasa', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+ }
+
 .img{
-    width: 80%;
+    width: 90%;
     height: auto;
+    display: block;
+    margin: auto;
+    border: solid #ac5118 5px;
+    border-radius: 5%;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Nasa', sans-serif;
+    color:#0b3d91;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
 }
 
 .curiosityCard {
-    width: 35rem;
+    background: #ffffff;
+    width: 60%;
     height: auto;
     text-align: center;
-    border: blue solid 1px;
-    padding: 1rem;
+    border: solid 15px;
+    border-color: #0b3d91;
+    border-radius: 10%;
+    padding: 5px;
     display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px red;
+    box-shadow: 0 4px 8px 0 #0b3d91;
+    transition: 0.3s;
+    margin: 30px;
+    float: left;
+}
+
+.curiosityCard:hover {
+    box-shadow: 0 8px 16px 0 #fc3d21;
 }
 
 .spiritCard {
-    width: 35rem;
+    background: #ffffff;
+    width: 60%;
     height: auto;
     text-align: center;
-    border: blue solid 1px;
-    padding: 1rem;
+    border: solid 15px;
+    border-color: #0b3d91;
+    border-radius: 10%;
+    padding: 5px;
     display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px red;
+    box-shadow: 0 4px 8px 0 #0b3d91;
+    transition: 0.3s;
+    margin: 30px;
+    float: left;
+}
+
+.spiritCard:hover {
+    box-shadow: 0 8px 16px 0 #fc3d21;
 }
