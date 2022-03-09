@@ -28,6 +28,10 @@ h1{
     font-weight: 600;
     font-size: x-large;
  }
+.submitBTN{
+    font-family: 'Helvetica';
+    font-size: large;
+}
 
 .img{
     width: 90%;
@@ -53,9 +57,9 @@ h2 {
 
 }
 
-.curiosityCard {
+.rover-class {
     background: #ffffff;
-    width: 60%;
+    width: 50%;
     height: auto;
     text-align: center;
     border: solid 15px;
@@ -69,26 +73,6 @@ h2 {
     float: left;
 }
 
-.curiosityCard:hover {
-    box-shadow: 0 8px 16px 0 #fc3d21;
-}
-
-.spiritCard {
-    background: #ffffff;
-    width: 60%;
-    height: auto;
-    text-align: center;
-    border: solid 15px;
-    border-color: #0b3d91;
-    border-radius: 10%;
-    padding: 5px;
-    display: inline-grid;
-    box-shadow: 0 4px 8px 0 #0b3d91;
-    transition: 0.3s;
-    margin: 30px;
-    float: left;
-}
-
-.spiritCard:hover {
+.rover-class:hover {
     box-shadow: 0 8px 16px 0 #fc3d21;
 }
