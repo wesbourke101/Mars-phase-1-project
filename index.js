@@ -1,75 +1,3 @@
-// // https://github.com/chrisccerami/mars-photo-api
-// ////////////////////Curiosity///////////////////////
-// let curiosityDateLocation = document.querySelector('#curiosityDate')
-// let curiosityImgLocation = document.querySelector(`#curiosityImg`)
-// let curiositySelectionLocation = document.querySelector("#curiosityID").textContent
-// let curiosityCameraSelection = document.querySelector("#curiosityCameraSelection")
-
-// let setCuriosityRover = curiositySelectionLocation
-// let setCuriosityDate = curiosityDateLocation.value
-// let setCuriosityCamera = curiosityCameraSelection.value
-
-// curiosityDateLocation.addEventListener('input', (e) => {
-//     e.preventDefault()
-//     setCuriosityDate = curiosityDateLocation.value
-//     requestCuriosityView()
-// })
-
-// curiosityCameraSelection.addEventListener('change', (e) => {
-//     e.preventDefault()
-//     setCuriosityCamera = curiosityCameraSelection.value
-//     requestCuriosityView()
-// })
-
-// function requestCuriosityView () {
-//     fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${setCuriosityRover}/photos?api_key=JHdB5Rdk7d8gcc7HSTXEAjo3P7d2dMNk44p6HVfu&earth_date=${setCuriosityDate}&camera=${setCuriosityCamera}`)
-//     .then((data) => data.json())
-    // .then((dataPic) => {
-    //     if (dataPic.photos.length > 0) {
-    //         curiosityImgLocation.src = dataPic.photos[0].img_src
-    //     } else {
-    //         curiosityImgLocation.src = "https://www.wired.com/images_blogs/wiredscience/2012/08/curiosoitycameras2.jpg"
-            
-    //     }
-    // }) 
-// }
-
-// ////////////////////Spirit/////////////////////////
-
-// let spiritDateLocation = document.querySelector('#spiritDate')
-// let spiritImgLocation = document.querySelector(`#spiritImg`)
-// let spiritSelectionLocation = document.querySelector("#spiritID").textContent
-// let spiritCameraSelection = document.querySelector("#spiritCameraSelection")
-
-// let setSpiritRover = spiritSelectionLocation
-// let setSpiritDate = spiritDateLocation.value
-// let setSpiritCamera = spiritCameraSelection.value
-
-// spiritDateLocation.addEventListener('change', (e) => {
-//     e.preventDefault()
-//     setSpiritDate = spiritDateLocation.value
-//     requestSpiritView()
-// })
-
-// spiritCameraSelection.addEventListener('change', (e) => {
-//     e.preventDefault()
-//     setSpiritCamera = spiritCameraSelection.value
-//     requestSpiritView()
-// })
-
-// function requestSpiritView () {
-//     fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${setSpiritRover}/photos?api_key=JHdB5Rdk7d8gcc7HSTXEAjo3P7d2dMNk44p6HVfu&earth_date=${setSpiritDate}&camera=${setSpiritCamera}`)
-//     .then((data1) => data1.json())
-//     .then((dataPic1) => {
-//        if (dataPic1.photos.length > 0) {
-//             spiritImgLocation.src = dataPic1.photos[0].img_src
-//         } else {
-//             spiritImgLocation.src = "https://mars.nasa.gov/system/resources/detail_files/8896_mer-instruments-diagram-full2.png"
-            
-//         }
-//     }) 
-// }
-
 document.addEventListener("DOMContentLoaded", function(){
     const marsRoverContainer = document.querySelector('.roverContainer')
     const mars_rovers = ['curiosity', 'perseverance', 'opportunity', 'spirit'];
@@ -133,20 +61,17 @@ document.addEventListener("DOMContentLoaded", function(){
         const formSubmitBTN = document.createElement('button')
         formSubmitBTN.className =`submitBTN`
         formSubmitBTN.textContent = "Submit"
-        formSubmitBTN.addEventListener("click", function (e, rover) {
+        formSubmitBTN.addEventListener("click", function (e) {
             e.preventDefault()
             console.log('button eventlistener')
             const webImgLocation = document.querySelector(`#${rover}Img`)
-            const RoverLocation = document.querySelector(`#${rover}-h2`).innerText
-            console.log(RoverLocation)
+            console.log(rover)
             const roverDate = document.querySelector(`#${rover}-date`)
-            const cameraLocation = document.querySelector(`${rover}-cameraSelect`)
-            let setRover = RoverLocation
+            const cameraLocation = document.querySelector(`#${rover}-cameraSelect`)
             let setDate = roverDate.value
             let setCamera = cameraLocation.value
             
-
-            fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${setRover}/photos?api_key=JHdB5Rdk7d8gcc7HSTXEAjo3P7d2dMNk44p6HVfu&earth_date=${setDate}&camera=${setCamera}`)
+            fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=JHdB5Rdk7d8gcc7HSTXEAjo3P7d2dMNk44p6HVfu&earth_date=${setDate}&camera=${setCamera}`)
             .then((data) => data.json())
             .then((dataPic) => {
                 if (dataPic.photos.length > 0) {
@@ -155,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     webImgLocation.src = "https://www.wired.com/images_blogs/wiredscience/2012/08/curiosoitycameras2.jpg"
                 }
             }) 
-            roverForm.reset()
+            //roverForm.reset()
         })
         roverForm.append(roverFormDateInput, roverCameraSelect, formSubmitBTN)
         ///////////////////////////////////
@@ -175,17 +100,4 @@ document.addEventListener("DOMContentLoaded", function(){
     //what rover - comes from an H2- locate this- change this
     //what day - come from form- locate this- change this
     //what camera - come from form- locate this- change this
-
-    //fetch
-    //     fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${setCuriosityRover}/photos?api_key=JHdB5Rdk7d8gcc7HSTXEAjo3P7d2dMNk44p6HVfu&earth_date=${setCuriosityDate}&camera=${setCuriosityCamera}`)
-    // .then((data) => data.json())
-    // .then((dataPic) => {
-    //     if (dataPic.photos.length > 0) {
-    //         curiosityImgLocation.src = dataPic.photos[0].img_src
-    //     } else {
-    //         curiosityImgLocation.src = "https://www.wired.com/images_blogs/wiredscience/2012/08/curiosoitycameras2.jpg"
-            
-    //     }
-    // }) 
-
 })
