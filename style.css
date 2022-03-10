@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Nasa';
-    src: url('http://fonts.cdnfonts.com/css/nasa');
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nasa'), url('https://fonts.cdnfonts.com/s/56439/Nasa.woff') format('woff');
 }
 
 /* @import url('http://fonts.cdnfonts.com/css/nasa'); */
