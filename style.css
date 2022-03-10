@@ -1,4 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/nasa');
+@font-face {
+    font-family: 'Nasa';
+    src: url('http://fonts.cdnfonts.com/css/nasa');
+}
+
+/* @import url('http://fonts.cdnfonts.com/css/nasa'); */
 /* nasa font */
 
 body {
@@ -8,29 +13,89 @@ body {
 }
 
 h1{
+    display: block;
+    align-items: center;
+    box-sizing: border-box;
+    
     font-family: 'Nasa', sans-serif;
-    font-size: 50px;
+    font-size: 4rem;
     color:#fc3d21;
     text-align: center;
-    background-color: #0b3d91;
+    
+    background: #0b3d91;
+    width: 100%;
+    border: solid 15px;
+    border-color: #ffffff;
+    border-radius: 30px;
+    
+    box-shadow: 0 4px 8px 0 #ffffff;
+    transition: 0.3s;
+}
+
+h1:hover {
+    box-shadow: 0 8px 16px 0 #fc3d21;
+}
+
+.rover-class {
+    display: table;
+    box-sizing: border-box;
+    align-items: center;
+
+    width: 50%;
+    height: auto;
+    margin: 30px;
+    padding: 5px;
+
+    background: #ffffff;
+    text-align: center;
+    border: solid 15px;
+    border-color: #0b3d91;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 #0b3d91;
+    transition: 0.3s;
+}
+
+.rover-class:hover {
+    box-shadow: 0 8px 16px 0 #fc3d21;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Nasa', sans-serif;
+    font-size: 4em;
+    color:#0b3d91;
+    
+    margin-bottom: 15px;
+    margin-top: 30px;
+
 }
 .form {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    padding-bottom: 10px;
+
+    border-radius: 5%;
+    font-size: 3rem;
 }
 
 .dateInput {
     font-family: 'Nasa', sans-serif;
-    font-size: x-large;
+    font-size: 1.25rem;
  }
 
 .cameraSelection {
     font-family: 'Nasa', sans-serif;
     font-weight: 600;
-    font-size: x-large;
+    font-size: 1.25rem;
  }
+
 .submitBTN{
     font-family: 'Helvetica';
-    font-size: large;
+    font-size: 1.25rem;
 }
 
 .img{
@@ -39,40 +104,13 @@ h1{
     display: block;
     margin: auto;
     border: solid #ac5118 5px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 p {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
+    text-align: left;
+    padding: 15px;
 }
 
-h2 {
-    font-family: 'Nasa', sans-serif;
-    color:#0b3d91;
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 15px;
-    margin-top: 30px;
-
-}
-
-.rover-class {
-    background: #ffffff;
-    width: 50%;
-    height: auto;
-    text-align: center;
-    border: solid 15px;
-    border-color: #0b3d91;
-    border-radius: 10%;
-    padding: 5px;
-    display: inline-grid;
-    box-shadow: 0 4px 8px 0 #0b3d91;
-    transition: 0.3s;
-    margin: 30px;
-    float: left;
-}
-
-.rover-class:hover {
-    box-shadow: 0 8px 16px 0 #fc3d21;
-}
