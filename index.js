@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
         const roverDiv = document.createElement('div')
             roverDiv.className = `rover-class`
             roverDiv.id = `rover-${rover}-id`
+            roverDiv.tabIndex = 0
         
             const roverH2 = document.createElement('h2')
                 roverH2.id =`${rover}-h2`
                 roverH2.textContent = `${rover}`
+                roverH2.tabIndex = 0
 
         ///////////////////////////////////
             const roverForm = document.createElement('form')
@@ -100,9 +102,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 imgLocation.id =`${rover}Img`
                 imgLocation.src = 'https://spaceplace.nasa.gov/mars-rovers/en/mars-rovers_metal-plate.en.jpg'
                 imgLocation.alt ="Mars Rovers sillhouette"
+                imgLocation.tabIndex = 0
 
             const paragraphTag = document.createElement('p')
                 paragraphTag.className ="paragraph"
+                paragraphTag.tabIndex = 0
                 if (rover === "perseverance"){
                     paragraphTag.innerHTML = '<strong>Launch Date:</strong> July 30, 2020, Cape Canaveral Air Force Station, Florida <br><strong>Date Landed:</strong> February 18, 2021 <br><strong>Mission Status:</strong> Active <br><strong>Mission Name:</strong> Mars 2020 <br><strong>Mission Goals:</strong> The Perseverance rover will seek signs of ancient life and collect rock and soil samples for possible return to Earth. <br><strong>Mission Duration:</strong> At least one Mars year (roughly 687 Earth days). In December 2012, Curiosity\'s two-year mission was extended indefinitely. <br><strong>Where Perseverance Traveled:</strong> 4.49 KM from the Jezero crater, Mars.'             
                 } else if (rover === "curiosity") {
